@@ -1292,7 +1292,7 @@ internal extension Array {
 
         anotherSelf.each {
             (index: Int, current: Element) in
-            if (current as! U) != element {
+            if (current as? U) != element {
                 self.append(current)
             }
         }
