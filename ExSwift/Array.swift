@@ -372,7 +372,10 @@ internal extension Array {
     mutating func shuffle () {
 
         for var i = self.count - 1; i >= 1; i-- {
-            let j = Int.random(max: i)
+            var j = 0
+            repeat {
+               j = Int.random(max: i)
+            } while i == j
             swap(&self[i], &self[j])
         }
 
