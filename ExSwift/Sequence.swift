@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal extension AnySequence {
+public extension AnySequence {
 
     /**
         First element of the sequence.
